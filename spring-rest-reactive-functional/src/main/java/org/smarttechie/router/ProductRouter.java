@@ -11,6 +11,11 @@ import static org.springframework.web.reactive.function.server.RequestPredicates
 @Configuration
 public class ProductRouter {
 
+    /**
+     * The router configuration for the product handler.
+     * @param productHandler
+     * @return
+     */
     @Bean
     public RouterFunction<ServerResponse> productsRoute(ProductHandler productHandler){
 
